@@ -9,7 +9,24 @@ sudo dmesg | grep DSDT
 [    0.316688] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC initialization complete
 ```
 
-compilation output
+Log after applying. Something changes
+```
+sudo dmesg | grep 'ACPI: (s'
+[sudo] password for kakadu: 
+[    0.276413] ACPI: (supports S0 S4 S5)
+sudo dmesg | grep DSDT
+[    0.005005] ACPI: DSDT 0x00000000CDFDA000 00B961 (v01 LENOVO CB-01    00000001      01000013)
+[    0.005095] ACPI: Reserving DSDT table memory at [mem 0xcdfda000-0xcdfe5960]
+[    0.006045] ACPI: DSDT ACPI table found in initrd [kernel/firmware/acpi/dsdt.aml][0xb9da]
+[    0.006107] ACPI: Table Upgrade: install [DSDT-LENOVO-CB-01   ]
+[    0.006109] ACPI: DSDT 0x00000000C95F6000 00B9DA (v01 LENOVO CB-01    00000002 INTL 20200925)
+[    0.276398] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC used to handle transactions
+[    0.320047] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC initialization complete
+```
+
+
+
+Compilation log
 
 ```
 ➜  acpi git:(master) mkae
