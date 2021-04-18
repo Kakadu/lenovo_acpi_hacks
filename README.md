@@ -1,3 +1,14 @@
+log before applying 
+```
+sudo dmesg | grep 'ACPI: (s'
+[    0.275780] ACPI: (supports S0 S4 S5)
+sudo dmesg | grep DSDT
+[    0.005003] ACPI: DSDT 0x00000000CDFDA000 00B961 (v01 LENOVO CB-01    00000001      01000013)
+[    0.005093] ACPI: Reserving DSDT table memory at [mem 0xcdfda000-0xcdfe5960]
+[    0.275765] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC used to handle transactions
+[    0.316688] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC initialization complete
+```
+
 compilation output
 
 ```
