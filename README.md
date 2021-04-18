@@ -24,6 +24,20 @@ sudo dmesg | grep DSDT
 [    0.320047] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC initialization complete
 ```
 
+lshw 
+```
+➜  acpi git:(master) ✗ sudo lshw|head
+gromozeka                   
+    description: Notebook
+    product: 81YM (LENOVO_MT_81YM_BU_idea_FM_IdeaPad 5 14ARE05)
+    vendor: LENOVO
+    version: IdeaPad 5 14ARE05
+    serial: MP1XSLA8
+    width: 64 bits
+    capabilities: smbios-3.1.1 dmi-3.1.1 smp vsyscall32
+    configuration: administrator_password=enabled boot=normal chassis=notebook family=IdeaPad 5 14ARE05 frontpanel_password=disabled keyboard_password=disabled power-on_password=disabled sku=LENOVO_MT_81YM_BU_idea_FM_IdeaPad 5 14ARE05 uuid=2BE216F8-8551-EB11-810A-7C8AE163D79F
+  *-core
+```
 
 
 Compilation log
